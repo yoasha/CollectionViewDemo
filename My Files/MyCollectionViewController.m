@@ -47,7 +47,7 @@ static NSString * const reuseIdentifier = @"Cell";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     UIListContentConfiguration *config = [((UICollectionViewListCell *)cell) defaultContentConfiguration];
-    config.text = [NSString stringWithFormat:@"Cell Title #%ld\nsome info\nsome info\nsome info", (long)indexPath.row];
+    config.text = @"----- Cell Title -----\nsome info\nsome info\nsome info";
     cell.contentConfiguration = config;
     
     return cell;
